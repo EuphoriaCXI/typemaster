@@ -72,7 +72,6 @@ h3 {
 
 a {
   font-size: 1rem;
-  font-weight: 500;
   line-height: 1.625;
   text-transform: uppercase;
   text-decoration: none;
@@ -105,16 +104,92 @@ h3 {
 h1,
 h2,
 h3,
-p {
+p,
+a {
   font-family: "Barlow", sans-serif;
 }
 
-/* Header - 375px */
-/* Placeholder */
+/* HEADER - 375px */
+/* -------------- */
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.688rem 1.5rem 0;
+}
 
-/* Hero - 375px */
+.header-btn {
+  background-color: var(--neutral-grey);
+}
+
+.header-btn a {
+  color: var(--primary-dark-blue);
+}
+
+/* HERO - 375px */
+/* ------------ */
+.hero__wrapper {
+  padding: 4.25rem 1.5rem 0;
+  overflow-x: hidden;
+}
+
+/* Hero - Content */
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__pre-order {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-btn {
+  background-color: var(--btn-orange);
+}
+
+.hero__pre-order a {
+  color: #fff;
+}
+
+.hero__pre-order p {
+  text-transform: uppercase;
+}
+
+/* Hero - Image */
+.hero__image {
+  width: 114%;
+  padding-top: 4.714rem;
+}
+
 .hero__image img {
   border-radius: 1.25rem 0 0 1.25rem;
+}
+
+/* SHOWCASE - 375px */
+/* ---------------- */
+.showcase__wrapper {
+  display: flex;
+  padding: 1.5rem 1.5rem 0 0;
+}
+
+.phone-keyboard {
+  background-color: var(--btn-orange);
+  position: relative;
+  left: -1.563rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.glass-keyboard img {
+  border-radius: 1.25rem;
+}
+
+.phone-keyboard img {
+  opacity: 0.7486;
+  mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 64rem) {
