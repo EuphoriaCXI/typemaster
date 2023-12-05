@@ -342,6 +342,11 @@ footer {
 
 @media screen and (min-width: 60.313rem) {
   /* Styling */
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   h1 {
     font-size: 3.5rem;
   }
@@ -349,5 +354,62 @@ footer {
   p {
     font-size: 1.125rem;
     line-height: 1.444;
+  }
+
+  /* Header */
+  .header__wrapper {
+    padding: 4rem 10.313rem 0;
+  }
+
+  /* Hero */
+  .hero__wrapper {
+    padding: 5.188rem 10.313rem 0;
+  }
+
+  .hero__content p {
+    gap: 1.5rem;
+    padding-right: 9.313rem;
+  }
+
+  .hero__image::before {
+    content: "";
+    background-image: url(/assets/shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 26.675rem;
+    bottom: 7.5rem;
+  }
+
+  .hero__image {
+    flex-shrink: unset;
+    left: 0;
+  }
+
+  .hero__image img {
+    max-width: 33.75rem;
+    border-radius: 1.25rem;
+  }
+
+  /* Showcase */
+  .desktop__container {
+    display: flex;
+    padding: 1.875rem 10.313rem 0;
+  }
+
+  .showcase__wrapper {
+    flex: 1 0 65.8%;
+    padding: 0;
+  }
+
+  .benefit__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0.96;
+    gap: 1.688rem;
+    padding: 0;
+    padding-left: 7.813rem;
   }
 }
