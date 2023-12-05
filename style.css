@@ -271,9 +271,76 @@ footer {
   .hero__image img {
     max-width: 29.875rem;
   }
+
+  /* Showcase */
+  .showcase__wrapper {
+    padding: 2.5rem 2.5rem 0;
+    gap: 1.875rem;
+  }
+
+  .phone-keyboard {
+    left: 0;
+  }
+
+  /* Benefit */
+  .benefit__wrapper {
+    display: flex;
+    gap: 4.25rem;
+    text-align: start;
+    padding: 4.5rem 2.5rem 0;
+  }
+
+  .benefit__wrapper h2 {
+    padding: 0;
+  }
+
+  .benefit__wrapper p {
+    padding-top: 0;
+    align-self: center;
+    flex-shrink: 1.1;
+  }
+
+  /* Features */
+  .features__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 21.188rem);
+    justify-content: space-around;
+    text-align: start;
+    padding: 9.813rem 2.5rem 0;
+  }
+
+  .features__wrapper .card {
+    align-items: baseline;
+  }
+
+  .features__wrapper .card:nth-of-type(2) {
+    padding-top: 0;
+  }
+
+  .features__wrapper .card:nth-of-type(3),
+  .features__wrapper .card:nth-of-type(4) {
+    padding-top: 4.5rem;
+  }
+
+  .features__wrapper .card p {
+    padding-right: 3rem;
+  }
+
+  .features__wrapper .card:nth-of-type(3) p {
+    padding-right: 4rem;
+  }
+
+  .features__wrapper .card:nth-of-type(4) p {
+    padding-right: 3.5rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 8.875rem 2.5rem 2.688rem;
+  }
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 60.313rem) {
   /* Styling */
   h1 {
     font-size: 3.5rem;
