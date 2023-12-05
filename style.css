@@ -241,6 +241,38 @@ footer {
   text-align: center;
 }
 
+/* TABLET - 768px */
+/* --------------- */
+@media screen and (min-width: 48rem) {
+  /* Header */
+  .header__wrapper {
+    padding: 2.5rem 2.5rem 0;
+  }
+
+  /* Hero */
+  .hero__wrapper {
+    display: flex;
+    padding: 3.875rem 2.5rem 0;
+  }
+
+  .hero__content {
+    flex-shrink: 0.6;
+    padding-top: 3.75rem;
+  }
+
+  .hero__image {
+    flex-shrink: 0;
+    position: relative;
+    left: 4.4rem;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .hero__image img {
+    max-width: 29.875rem;
+  }
+}
+
 @media screen and (min-width: 64rem) {
   /* Styling */
   h1 {
