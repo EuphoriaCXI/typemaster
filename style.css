@@ -433,13 +433,19 @@ footer {
 
   /* Features */
   .features__wrapper {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    justify-content: flex-start;
+    gap: 1.875rem;
     padding: 10.5rem 10.313rem 0;
   }
 
   .features__wrapper .card p {
+    padding-right: 0;
+    border: 2px solid red;
+  }
+
+  .features__wrapper .card:nth-of-type(3) p,
+  .features__wrapper .card:nth-of-type(4) p {
     padding-right: 0;
   }
 
